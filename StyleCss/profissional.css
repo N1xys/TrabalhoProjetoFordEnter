@@ -1,22 +1,56 @@
+/* Importação das fontes */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+/* Variáveis de cor */
 body {
-    --azul-escuro: #0d47a1;
+    --azul-escuro: #020024;
     --azul-medio: #1976d2;
     --azul-claro: #e3f2fd;
     --azul-hover: #1565c0;
     --branco: #fff;
     --cinza-claro: #f5f7fa;
+    --RGB-padrao: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
 }
 
+/* Fonte padrão para textos */
 body {
-    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
-    background: var(--azul-claro);
-    color: var(--azul-escuro);
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+    background: #020024;
+    color: #fff;
     margin: 0;
     padding: 0;
 }
 
+main {
+    background: var(--branco);
+    color: var(--azul-escuro);
+    max-width: 800px;
+    margin: 40px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(21, 101, 192, 0.10);
+    padding: 40px 30px;
+}
+
+ul,
+li,
+footer {
+    background: none;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/* Títulos com Bebas Neue */
+header,
+header h1,
+h2 {
+    font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
 header {
-    background: linear-gradient(90deg, var(--azul-escuro), var(--azul-medio));
+    background: var(--RGB-padrao);
     color: var(--branco);
     padding: 40px 0 20px 0;
     text-align: center;
@@ -33,15 +67,7 @@ header p {
     margin: 0;
     font-size: 1.2rem;
     opacity: 0.95;
-}
-
-main {
-    max-width: 800px;
-    margin: 40px auto;
-    background: var(--branco);
-    border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(21, 101, 192, 0.10);
-    padding: 40px 30px;
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
 }
 
 h2 {
@@ -64,19 +90,21 @@ ul li {
 }
 
 footer {
-    background: var(--azul-escuro);
+    background: var(--RGB-padrao);
     color: var(--branco);
     text-align: center;
     padding: 18px 0;
     margin-top: 50px;
     font-size: 1rem;
     letter-spacing: 1px;
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
 }
 
 @media (max-width: 600px) {
     main {
         padding: 20px 8px;
     }
+
     header h1 {
         font-size: 1.5rem;
     }
