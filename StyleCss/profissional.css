@@ -1,0 +1,143 @@
+/* Importação das fontes */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+/* Variáveis de cor */
+body {
+    --azul-escuro: #020024;
+    --azul-medio: #1976d2;
+    --azul-claro: #e3f2fd;
+    --azul-hover: #1565c0;
+    --branco: #fff;
+    --cinza-claro: #f5f7fa;
+    --RGB-padrao: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+/* Fonte padrão para textos */
+body {
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+    background: #020024;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background: none;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+section.topico {
+    background: var(--branco);
+    color: var(--azul-escuro);
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(21, 101, 192, 0.10);
+    padding: 32px 24px;
+}
+
+ul,
+li,
+footer {
+    background: none;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/* Títulos com Bebas Neue */
+header,
+header h1,
+h2 {
+    font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
+header {
+    background: var(--RGB-padrao);
+    color: var(--branco);
+    padding: 40px 0 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(13, 71, 161, 0.08);
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.2rem;
+    opacity: 0.95;
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+}
+
+header nav {
+    margin-top: 24px;
+}
+
+h2 {
+    color: var(--azul-medio);
+    margin-top: 32px;
+    margin-bottom: 12px;
+    font-size: 1.4rem;
+}
+
+ul {
+    line-height: 1.8;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 22px;
+}
+
+ul li {
+    margin-bottom: 8px;
+    font-size: 1.05rem;
+}
+
+footer {
+    background: var(--RGB-padrao);
+    color: var(--branco);
+    text-align: center;
+    padding: 18px 0;
+    margin-top: 50px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+}
+
+nav {
+    background: var(--RGB-padrao);
+    padding: 12px 0;
+    text-align: center;
+}
+
+nav a {
+    color: var(--branco);
+    text-decoration: none;
+    font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    margin: 0 18px;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: var(--azul-hover);
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 20px 8px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+}
