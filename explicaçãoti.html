@@ -4,50 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O Mundo da Tecnologia da Informação (TI)</title>
+    <link rel="stylesheet" href="StyleCss/explicaçãoti.css">
+
+    <!-- Links das Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    
+
 </head>
 <body>
 
     <header>
+        <h1>O Mundo da Tecnologia da Informação (TI )</h1>
         
-        <h1>O Mundo da Tecnologia da Informação (TI)</h1>
+        <!-- MENU DE NAVEGAÇÃO -->
+        <nav>
+            <a href="#o-que-e">O que é?</a>
+            <a href="#carreiras">Carreiras</a>
+            <a href="#como-comecar">Como Começar</a>
+        </nav>
     </header>
 
     <main>
-        <section>
+        <!-- Adicionado ID para o link do menu -->
+        <div id="o-que-e">
             <h2>O que é TI?</h2>
-            <p>
-                A Tecnologia da Informação, ou simplesmente TI, é a área que utiliza a computação 
-                para produzir, transmitir, armazenar e acessar informações. Ela é a base para o 
-                funcionamento de quase tudo no mundo digital de hoje.
-            </p>
-        </section>
+            <p>A Tecnologia da Informação, ou simplesmente TI, é a área que utiliza a computação para produzir, transmitir, armazenar e acessar informações. Ela é a base para o funcionamento de quase tudo no mundo digital de hoje.</p>
+        </div>
 
-        <section>
+        <div>
             <h2>Por que a área de TI está tão em alta?</h2>
-            <p>
-                Vivemos em uma era digital. Empresas de todos os tamanhos precisam da tecnologia 
-                para operar, inovar e competir no mercado. Alguns motivos para a alta demanda são:
-            </p>
+            <p>Vivemos em uma era digital. Empresas de todos os tamanhos precisam da tecnologia para operar, inovar e competir no mercado. Alguns motivos para a alta demanda são:</p>
             <ul>
                 <li><strong>Transformação Digital:</strong> Empresas estão modernizando seus processos com tecnologia.</li>
                 <li><strong>Novas Tecnologias:</strong> O avanço da Inteligência Artificial, Computação em Nuvem e Segurança Cibernética cria muitas oportunidades.</li>
                 <li><strong>Trabalho Remoto:</strong> A necessidade de infraestrutura para o trabalho a distância aumentou a demanda por profissionais de TI.</li>
             </ul>
-        </section>
+        </div>
 
-        <section>
+        <!-- Adicionado ID para o link do menu -->
+        <div id="carreiras">
+            <h2>Principais Carreiras em TI</h2>
+            <p>A área de TI é vasta e oferece diversas especializações. Algumas das carreiras mais procuradas são:</p>
+            <ul>
+                <li><strong>Desenvolvimento de Software:</strong> Criação de aplicativos, sites e sistemas.</li>
+                <li><strong>Segurança da Informação:</strong> Proteção de dados e sistemas contra ataques cibernéticos.</li>
+                <li><strong>Ciência de Dados:</strong> Análise de grandes volumes de dados para extrair insights e tomar decisões.</li>
+                <li><strong>Infraestrutura e Cloud:</strong> Gerenciamento de servidores, redes e serviços em nuvem (como AWS e Azure).</li>
+                <li><strong>UX/UI Design:</strong> Foco na experiência do usuário e no design de interfaces.</li>
+            </ul>
+        </div>
+
+        <!-- Adicionado ID para o link do menu -->
+        <div id="como-comecar">
+            <h2>Como Começar a Estudar?</h2>
+            <p>Entrar na área de TI pode parecer desafiador, mas existem muitos caminhos. Aqui estão algumas dicas:</p>
+            <ul>
+                <li><strong>Cursos Online:</strong> Plataformas como Coursera, Udemy e Alura oferecem cursos para todos os níveis.</li>
+                <li><strong>Documentação Oficial:</strong> Aprender a ler a documentação de tecnologias é uma habilidade fundamental.</li>
+                <li><strong>Projetos Pessoais:</strong> Crie pequenos projetos para praticar o que aprende.</li>
+                <li><strong>Comunidades:</strong> Participe de fóruns, grupos no Discord ou eventos online.</li>
+            </ul>
+        </div>
+
+        <div>
             <h2>Conclusão</h2>
-            <p>
-                A área de TI é dinâmica, desafiadora e cheia de oportunidades. Investir em uma carreira 
-                em tecnologia é uma ótima escolha para quem busca crescimento profissional e um trabalho 
-                com grande impacto no futuro.
-            </p>
-        </section>
+            <p>A área de TI é dinâmica, desafiadora e cheia de oportunidades. Investir em uma carreira em tecnologia é uma ótima escolha para quem busca crescimento profissional e um trabalho com grande impacto no futuro.</p>
+        </div>
     </main>
 
     <footer>
         <p>Página criada em 2025.</p>
     </footer>
+
+    <!-- SCRIPT PARA ANIMAÇÃO AO ROLAR (SCROLL REVEAL) -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal( ).reveal('main > div', {
+            delay: 150,
+            distance: '50px',
+            origin: 'bottom',
+            opacity: 0,
+            interval: 100,
+            easing: 'ease-in-out'
+        });
+    </script>
 
 </body>
 </html>
