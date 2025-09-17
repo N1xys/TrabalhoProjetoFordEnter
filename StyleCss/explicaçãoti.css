@@ -3,11 +3,39 @@ html {
     scroll-behavior: smooth;
 }
 
+body{
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('/Assets/Design\ sem\ nome.png')
+
+}
 body {
     font-family: 'Quicksand', sans-serif; 
     margin: 0;
     padding: 0;
    background-color: #020024;
+}
+
+#headerContainer2{
+
+    background: #020024;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-family: bebas neue;
+    font-weight: 10;
+    border-radius: 10px;
+
+}
+
+#headerContainer2 img{
+
+    width: 100px;
+    margin-bottom: 0 auto;
+
+
 }
 
 header {
