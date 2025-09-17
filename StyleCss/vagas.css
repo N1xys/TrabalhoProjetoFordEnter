@@ -1,0 +1,138 @@
+/*fontes utilizadas*/
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.quicksand {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/*CSS pagina inicial/index*/
+
+body{
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('/Assets/Design\ sem\ nome.png')
+
+}
+
+#headerContainer2{
+
+    background: #020024;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-family: bebas neue;
+    font-weight: 10;
+    border-radius: 10px;
+
+}
+
+#headerContainer2 img{
+
+    width: 100px;
+    margin-bottom: 0 auto;
+
+
+}
+
+h1{
+
+    color: white;
+    text-align: center;
+    font-family: bebas neue;
+    font-weight: 100;
+    background-color: rgba(1, 1, 114, 0.37);
+
+}
+
+
+
+#containerMain1{
+
+    background-color: white;
+    max-width: 300px;
+    max-height: 500px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+#containerMain2{
+
+    background-color: white;
+    max-width: 300px;
+    max-height: 500px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+#containerMain3{
+
+    background-color: white;
+    max-width: 300px;
+    max-height: 500px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+
+
+#containers h2{
+
+    font-family: bebas neue;
+    font-weight: 100;
+    color: rgb(50, 0, 97);
+
+}
+#containers p{
+
+    font-family:quicksand ;
+    color: rgb(0, 0, 0);
+
+}
+
+#containers {
+    display: flex;
+    justify-content: center; /* Alinha os itens horizontalmente no centro */
+    align-items: flex-start; /* Alinha os itens verticalmente no topo (ou use 'center' para centralizar verticalmente também) */
+    gap: 20px; /* Espaçamento entre os containers */
+    margin-top: 30px;
+    flex-wrap: wrap; /* Permite quebra de linha caso a tela seja pequena */
+}
+
+#containers > div {
+    width: 300px; /* Tamanho fixo ou responsivo */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    text-align: left; /* ou center se quiser o conteúdo centralizado */
+}
+
+
+button{
+
+    
+    background-color: rgb(0, 157, 255);
+    border: none;
+    font-size: 17px;
+    font-family: bebas neue;
+    color: white;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+
+
+}
+
+
